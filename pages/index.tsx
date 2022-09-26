@@ -1,12 +1,15 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
-import styles from "../styles/Home.module.css";
+import Header from "../components/Header";
 
 const Home: NextPage = () => {
   return (
     <div>
-      <h1>Hello World</h1>
+      <Head>
+        <title>Arjun's Portfolio</title>
+      </Head>
+      <Header />
     </div>
   );
 };
