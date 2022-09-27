@@ -26,17 +26,17 @@ function About({}: Props) {
       <motion.img
         src="/dp.jpg"
         initial={{
-          y: 100,
+          x: -200,
           opacity: 0,
         }}
         whileInView={{
-          y: 0,
+          x: 0,
           opacity: 1,
         }}
         transition={{
-          duration: 0.5,
+          duration: 1,
         }}
-        className="h-96 w-96 rounded-3xl"
+        className="mt-10 md:mb-0 flex-shrink-0 w-44 h-44 rounded-full object-cover md:rounded-lg md:h-80 md:w-80 xl:w-[320px] xl:h-[400px]"
       />
       <motion.div
         initial={{
@@ -50,12 +50,16 @@ function About({}: Props) {
         transition={{
           duration: 0.5,
         }}
-        className="space-y-10"
+        className="space-y-5 px-0 md:px-10"
       >
-        <h4 className="text-4xl font-semibold ">
-          "You can always be thinner you look better."
-          <p className="flex justify-end mr-5 pt-5">-Patrik Bateman</p>
+        <h4 className="text-xl xl:text-3xl text-center font-semibold">
+          Here is a little Background
         </h4>
+        <p className="font-extralight text-md text-center">
+          Hey there, My name is Arjun Choudhury. Currently I am pursuing B.Tech
+          in Information Technology from Jalpaiguri Government Engineering
+          College.
+        </p>
       </motion.div>
     </div>
   );

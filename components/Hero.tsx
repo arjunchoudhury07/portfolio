@@ -20,19 +20,10 @@ function Hero({}: Props) {
   return (
     <div className="h-screen flex flex-col justify-center space-y-8 items-center text-center overflow-hidden">
       <BackgroundCircles />
-      <motion.img
-        initial={{
-          opacity: 0,
-          scale: 0.1,
-        }}
-        animate={{
-          opacity: 1,
-          scale: 1,
-        }}
-        transition={{
-          duration: 1.5,
-        }}
+      <Image
         src="/dp.jpg"
+        height={200}
+        width={200}
         className="relative rounded-full mx-auto object-cover h-40 w-40"
       />
 
@@ -50,11 +41,11 @@ function Hero({}: Props) {
         }}
         className="z-20"
       >
-        <h2 className="text-sm uppercase text-gray-300 tracking-[10px] pb-6">
+        <h2 className="text-[12px] md:text-sm uppercase text-gray-300 tracking-[10px] pb-6">
           IT Undergraduate
         </h2>
-        <h1 className="text-5xl xl:text-6xl font-semibold ">
-          <span className="mr-3">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl xl:text-6xl font-semibold ">
+          <span className="">
             {text}
             <Cursor />
           </span>
